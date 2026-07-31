@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: corporate-copilot-api
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: ASPNETCORE_URLS
+        value: http://0.0.0.0:8080
+      - key: Gemini__Model
+        value: gemini-3.1-flash-lite
+      - key: Gemini__Endpoint
+        value: https://generativelanguage.googleapis.com/v1beta
+      - key: Gemini__ApiKey
+        sync: false
+      - key: Cors__AllowedOrigins__0
+        sync: false
+

@@ -1,0 +1,14 @@
+**/.git
+**/.vs
+**/.vscode
+**/bin
+**/obj
+**/out
+**/.idea
+**/*.user
+**/*.swp
+**/TestResults
+**/.DS_Store
+README.md
+.gitignore
+.dockerignore

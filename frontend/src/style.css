@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@import "highlight.js/styles/github.css";
+
+@theme {
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+  --font-sans: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: #f8fafc;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+}
+
+.markdown-body {
+  line-height: 1.65;
+  word-break: break-word;
+}
+
+.markdown-body p {
+  margin: 0.5rem 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  margin: 0.5rem 0;
+  padding-left: 1.25rem;
+}
+
+.markdown-body pre {
+  margin: 0.75rem 0;
+  overflow-x: auto;
+  border-radius: 0.75rem;
+  background: #f1f5f9;
+  padding: 0.875rem 1rem;
+}
+
+.markdown-body code {
+  font-size: 0.875em;
+}
+
+.markdown-body :not(pre) > code {
+  border-radius: 0.375rem;
+  background: #e2e8f0;
+  padding: 0.125rem 0.375rem;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3 {
+  margin: 0.75rem 0 0.5rem;
+  font-weight: 600;
+  color: #1e3a8a;
+}
